@@ -16,7 +16,7 @@ class BeatTicker():
         if username == None:
             username = input("username")
         self.scope = 'user-read-currently-playing'
-        self.token = util.prompt_for_user_token(username, self.scope, client_id='bf01fed437564548b0916b143817e946',client_secret='1de3eb08677a4d9e8b9bfa82b037965e',redirect_uri='http://m-3.me/')
+        self.token = util.prompt_for_user_token(username, self.scope, client_id='client_id',client_secret='secret',redirect_uri='http://m-3.me/')
         self.currPlaying = None
 
         self.offset = offset
